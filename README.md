@@ -8,11 +8,11 @@
 
 [E3 iOS App @ Huihoo code](http://code.huihoo.com/huihoo/e3-app)
 
-#### 编译运行：
+#### 编译运行
 * git clone https://github.com/huihoo/e3-ios
 * 在 Xcode 编译运行 E3 项目
 
-#### 功能：
+#### 功能
 * 用户注册、登录、忘记密码
 * 商品分类、搜索、心愿单
 * 商品详情、库存显示、销售数量
