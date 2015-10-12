@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WishListTableViewCell" rowHeight="102" id="KGk-i7-Jjw" customClass="WishListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dYL-Tq-BCi">
+                        <rect key="frame" x="8" y="16" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="W3F-Zb-EVG"/>
+                            <constraint firstAttribute="height" constant="70" id="sWe-eE-PwE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机饭卡咖啡机咔就是发接口撒娇饭卡肌肤时刻" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X68-kw-9ZN">
+                        <rect key="frame" x="86" y="16" width="231" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHl-5L-e62">
+                        <rect key="frame" x="86" y="62" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4k-Ra-TrQ">
+                        <rect key="frame" x="136" y="66" width="30.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="843人已许愿" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGr-gl-bMr">
+                        <rect key="frame" x="86" y="84" width="80" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dYL-Tq-BCi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="3vk-og-2Qe"/>
+                    <constraint firstItem="uHl-5L-e62" firstAttribute="leading" secondItem="mGr-gl-bMr" secondAttribute="leading" id="3yE-Sg-MYH"/>
+                    <constraint firstItem="uHl-5L-e62" firstAttribute="bottom" secondItem="q4k-Ra-TrQ" secondAttribute="bottom" constant="2" id="9Oc-Jj-sIi"/>
+                    <constraint firstItem="q4k-Ra-TrQ" firstAttribute="leading" secondItem="uHl-5L-e62" secondAttribute="trailing" constant="8" id="ABs-pk-ctq"/>
+                    <constraint firstItem="X68-kw-9ZN" firstAttribute="top" secondItem="dYL-Tq-BCi" secondAttribute="top" id="Cbd-YM-dER"/>
+                    <constraint firstItem="uHl-5L-e62" firstAttribute="top" secondItem="X68-kw-9ZN" secondAttribute="bottom" constant="5" id="KQB-bA-Zhs"/>
+                    <constraint firstItem="X68-kw-9ZN" firstAttribute="leading" secondItem="dYL-Tq-BCi" secondAttribute="trailing" constant="8" id="RTL-Hr-jsB"/>
+                    <constraint firstItem="mGr-gl-bMr" firstAttribute="top" secondItem="uHl-5L-e62" secondAttribute="bottom" constant="2" id="ayv-Ds-vPV"/>
+                    <constraint firstItem="uHl-5L-e62" firstAttribute="leading" secondItem="X68-kw-9ZN" secondAttribute="leading" id="iXt-vv-LcK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="X68-kw-9ZN" secondAttribute="trailing" id="ogo-qv-TST"/>
+                    <constraint firstAttribute="centerY" secondItem="dYL-Tq-BCi" secondAttribute="centerY" id="sx5-3M-MLV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descLabel" destination="mGr-gl-bMr" id="DD8-Db-v0c"/>
+                <outlet property="nameLabel" destination="X68-kw-9ZN" id="5Cy-V5-laM"/>
+                <outlet property="oldPriceLabel" destination="q4k-Ra-TrQ" id="HDl-1z-NaW"/>
+                <outlet property="picImageView" destination="dYL-Tq-BCi" id="dpd-dk-5Xa"/>
+                <outlet property="priceLabel" destination="uHl-5L-e62" id="uV5-q4-TWu"/>
+            </connections>
+            <point key="canvasLocation" x="234.5" y="183"/>
+        </tableViewCell>
+    </objects>
+</document>

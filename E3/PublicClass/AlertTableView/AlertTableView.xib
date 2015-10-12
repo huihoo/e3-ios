@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="AlertTableView">
+            <rect key="frame" x="0.0" y="94" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCf-Rv-r0F">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                    <color key="backgroundColor" red="0.85490196078431369" green="0.8666666666666667" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="yN7-pm-Mo4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNg-Db-ekn">
+                    <rect key="frame" x="0.0" y="555" width="600" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGI-4n-H2H">
+                            <rect key="frame" x="0.0" y="1" width="301" height="44"/>
+                            <color key="backgroundColor" red="0.85882352941176465" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="取消">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cancle:" destination="iN0-l3-epB" eventType="touchUpInside" id="GVO-eW-Kty"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0x-dj-hpk">
+                            <rect key="frame" x="302" y="1" width="298" height="44"/>
+                            <color key="backgroundColor" red="0.87450980392156863" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="确定">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="confirm:" destination="iN0-l3-epB" eventType="touchUpInside" id="75h-6H-mVM"/>
+                                <action selector="submitResult:" destination="iN0-l3-epB" eventType="touchUpInside" id="noy-7b-n5I"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="J0x-dj-hpk" firstAttribute="leading" secondItem="dGI-4n-H2H" secondAttribute="trailing" constant="1" id="3ru-CH-Oht"/>
+                        <constraint firstAttribute="bottom" secondItem="dGI-4n-H2H" secondAttribute="bottom" id="3s1-3i-1aM"/>
+                        <constraint firstItem="dGI-4n-H2H" firstAttribute="top" secondItem="GNg-Db-ekn" secondAttribute="top" constant="1" id="AeQ-SG-y23"/>
+                        <constraint firstAttribute="height" constant="45" id="Bng-Q6-8b4"/>
+                        <constraint firstAttribute="trailing" secondItem="dGI-4n-H2H" secondAttribute="trailing" multiplier="2" constant="-1" id="FEm-gU-NsY"/>
+                        <constraint firstAttribute="bottom" secondItem="J0x-dj-hpk" secondAttribute="bottom" id="Tc0-Rg-YDM"/>
+                        <constraint firstAttribute="trailing" secondItem="J0x-dj-hpk" secondAttribute="trailing" id="qZD-G3-14i"/>
+                        <constraint firstItem="dGI-4n-H2H" firstAttribute="leading" secondItem="GNg-Db-ekn" secondAttribute="leading" id="rUj-0Y-YyI"/>
+                        <constraint firstItem="J0x-dj-hpk" firstAttribute="top" secondItem="GNg-Db-ekn" secondAttribute="top" constant="1" id="uE8-Zx-JXo"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="scw-EQ-U25">
+                    <rect key="frame" x="0.0" y="30" width="600" height="525"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GNg-Db-ekn" secondAttribute="trailing" id="1N7-g2-y8d"/>
+                <constraint firstItem="scw-EQ-U25" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GVf-Ck-4ZV"/>
+                <constraint firstItem="GNg-Db-ekn" firstAttribute="top" secondItem="scw-EQ-U25" secondAttribute="bottom" id="MBZ-I8-bs2"/>
+                <constraint firstItem="GNg-Db-ekn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MhQ-eP-qE7"/>
+                <constraint firstAttribute="trailing" secondItem="eCf-Rv-r0F" secondAttribute="trailing" id="Rzq-4l-fKU"/>
+                <constraint firstItem="eCf-Rv-r0F" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aNM-pi-f2w"/>
+                <constraint firstItem="eCf-Rv-r0F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="asg-jZ-JsJ"/>
+                <constraint firstAttribute="trailing" secondItem="eCf-Rv-r0F" secondAttribute="trailing" id="azK-NC-i7a"/>
+                <constraint firstItem="eCf-Rv-r0F" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="byL-4v-w4H"/>
+                <constraint firstItem="eCf-Rv-r0F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gwi-hJ-fdv"/>
+                <constraint firstItem="scw-EQ-U25" firstAttribute="top" secondItem="eCf-Rv-r0F" secondAttribute="bottom" id="jst-Cs-8Uq"/>
+                <constraint firstAttribute="bottom" secondItem="eCf-Rv-r0F" secondAttribute="bottom" id="lST-Yo-wj6"/>
+                <constraint firstAttribute="bottom" secondItem="GNg-Db-ekn" secondAttribute="bottom" id="xKS-yn-17b"/>
+                <constraint firstAttribute="trailing" secondItem="scw-EQ-U25" secondAttribute="trailing" id="zbE-6A-mwo"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="asg-jZ-JsJ"/>
+                    <exclude reference="azK-NC-i7a"/>
+                    <exclude reference="byL-4v-w4H"/>
+                    <exclude reference="lST-Yo-wj6"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="bottomBtnBgView" destination="GNg-Db-ekn" id="ceS-wx-93t"/>
+                <outlet property="submitBtn" destination="J0x-dj-hpk" id="InE-tZ-kAc"/>
+                <outlet property="tableView" destination="scw-EQ-U25" id="Ap5-ru-xAl"/>
+                <outlet property="topTitleLabel" destination="eCf-Rv-r0F" id="JAJ-w1-iRD"/>
+            </connections>
+        </view>
+    </objects>
+</document>

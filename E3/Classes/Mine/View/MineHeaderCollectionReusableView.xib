@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MineHeaderCollectionReusableView" id="U6b-Vx-4bR" customClass="MineHeaderCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="8vb-Es-zX3">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8WS-B9-BhJ">
+                    <rect key="frame" x="115" y="5" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="ie2-Bl-Gam"/>
+                        <constraint firstAttribute="width" constant="90" id="oPW-b5-6h6"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9r-Zt-1Fn">
+                    <rect key="frame" x="139" y="103" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8vb-Es-zX3" secondAttribute="bottom" id="0yt-EC-CNM"/>
+                <constraint firstAttribute="trailing" secondItem="8vb-Es-zX3" secondAttribute="trailing" id="37p-yT-8WB"/>
+                <constraint firstAttribute="centerX" secondItem="8WS-B9-BhJ" secondAttribute="centerX" id="8rf-5o-Xnc"/>
+                <constraint firstAttribute="centerY" secondItem="8vb-Es-zX3" secondAttribute="centerY" id="IHs-cb-QAY"/>
+                <constraint firstItem="8vb-Es-zX3" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="cUs-jg-eXH"/>
+                <constraint firstAttribute="centerY" secondItem="8WS-B9-BhJ" secondAttribute="centerY" constant="20" id="d37-sC-RiR"/>
+                <constraint firstAttribute="centerX" secondItem="8vb-Es-zX3" secondAttribute="centerX" id="dKG-Gf-BPD"/>
+                <constraint firstItem="l9r-Zt-1Fn" firstAttribute="top" secondItem="8WS-B9-BhJ" secondAttribute="bottom" constant="5" id="hoV-xa-ZI9"/>
+                <constraint firstAttribute="centerX" secondItem="l9r-Zt-1Fn" secondAttribute="centerX" id="vCi-sg-bfg"/>
+                <constraint firstItem="8vb-Es-zX3" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="vgV-cZ-Ww8"/>
+            </constraints>
+            <connections>
+                <outlet property="nameLabel" destination="l9r-Zt-1Fn" id="fQO-BK-QwB"/>
+                <outlet property="picImageView" destination="8WS-B9-BhJ" id="qdy-TG-lti"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="80"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="bg" width="320" height="139"/>
+    </resources>
+</document>

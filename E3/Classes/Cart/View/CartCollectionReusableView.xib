@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CartCollectionReusableView" id="U6b-Vx-4bR" customClass="CartCollectionReusableView">
+            <rect key="frame" x="0.0" y="-4" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYS-L3-geE">
+                    <rect key="frame" x="57" y="19" width="231" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="箭头" translatesAutoresizingMaskIntoConstraints="NO" id="jUq-ix-I1V">
+                    <rect key="frame" x="298" y="20" width="12" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="EOk-n8-Rul"/>
+                        <constraint firstAttribute="height" constant="18" id="phv-SR-BB1"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hG-5W-lQx">
+                    <rect key="frame" x="10" y="15" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="LlY-Qt-3cD"/>
+                        <constraint firstAttribute="width" constant="30" id="PXE-Tf-89g"/>
+                    </constraints>
+                    <state key="normal" image="选择-圈">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="选择"/>
+                    <connections>
+                        <action selector="select:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="aMq-DK-kEr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KO-W7-y4K">
+                    <rect key="frame" x="220" y="0.0" width="100" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="5gF-UY-8eZ"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="supplier:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="W76-ne-Fmr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="3hG-5W-lQx" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="0e1-M7-OuC"/>
+                <constraint firstAttribute="centerY" secondItem="3hG-5W-lQx" secondAttribute="centerY" id="4f1-bD-Ac7"/>
+                <constraint firstItem="wYS-L3-geE" firstAttribute="leading" secondItem="3hG-5W-lQx" secondAttribute="trailing" constant="20" id="8BG-oi-w55"/>
+                <constraint firstAttribute="trailing" secondItem="4KO-W7-y4K" secondAttribute="trailing" id="8ex-0C-GRi"/>
+                <constraint firstAttribute="bottom" secondItem="4KO-W7-y4K" secondAttribute="bottom" id="UUD-wx-MIW"/>
+                <constraint firstAttribute="centerY" secondItem="jUq-ix-I1V" secondAttribute="centerY" id="kHS-oc-kSK"/>
+                <constraint firstAttribute="centerY" secondItem="wYS-L3-geE" secondAttribute="centerY" id="nFB-HO-6js"/>
+                <constraint firstItem="4KO-W7-y4K" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="ngv-gv-th2"/>
+                <constraint firstAttribute="trailing" secondItem="jUq-ix-I1V" secondAttribute="trailing" constant="10" id="sgZ-8c-SlP"/>
+                <constraint firstItem="jUq-ix-I1V" firstAttribute="leading" secondItem="wYS-L3-geE" secondAttribute="trailing" constant="10" id="tqg-eu-WSB"/>
+            </constraints>
+            <connections>
+                <outlet property="selectBtn" destination="3hG-5W-lQx" id="NZy-jk-u1d"/>
+                <outlet property="supplierName" destination="wYS-L3-geE" id="UMA-KR-wA2"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="177"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="箭头" width="12" height="18"/>
+        <image name="选择" width="14" height="14"/>
+        <image name="选择-圈" width="15" height="15"/>
+    </resources>
+</document>

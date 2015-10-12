@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  E3
+//
+//  Created by colin liao on 7/28/15.
+//  Copyright (c) 2015年 HuiHoo. All rights reserved.
+//
+
+#ifndef E3_PrefixHeader_pch
+#define E3_PrefixHeader_pch
+
+#import "PublicClass.h"
+#import "DMCAlertCenter.h"
+#import "WLBaseURLModel.h"
+#import "AppData.h"
+#import "BaseViewController.h"
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+#import "User.h"
+#import "LoginViewController.h"
+
+#endif
