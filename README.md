@@ -2,6 +2,8 @@
 
 灰狐E3 http://e3.huihoo.com
 
+[E3 iOS App @ Huihoo code](http://code.huihoo.com/huihoo/e3-app)
+
 App Screen
 
 ![e3](http://wiki.huihoo.com/images/7/70/E3-ios-app-01.png)
